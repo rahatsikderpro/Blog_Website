@@ -1,0 +1,35 @@
+#register-Form{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 600px;
+    margin: auto;
+}
+#register-Form input{
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    height: auto;
+}
+
+#register-Submit{
+    margin: auto;
+    margin-bottom:30px ;
+    height: 36px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    font-size:16px;
+}
+#register-Btn{
+    padding: 4px 8px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 4px;
+    cursor: pointer;
+}

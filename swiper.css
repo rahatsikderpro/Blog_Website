@@ -1,0 +1,19 @@
+.swip-Container{
+  /* background-color: rgba(0, 0, 0, 0.26); */
+  height: auto;
+  max-width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.swip-Container::-webkit-scrollbar {
+  display: none; 
+}
+.swip-Container {
+  scroll-behavior: smooth;
+}
+.swip-child{
+  flex: 0 0 auto;
+    
+}

@@ -1,0 +1,127 @@
+@media only screen and (max-width: 600px) {
+    main{
+        width: 100%;
+        /* height: calc(100% - 300px); */
+        min-height: calc(100% - 300px);;
+        background-color: var(--main-div-bg-color);
+        margin: auto;
+        gap: 50px;
+        padding-top: 60px;
+    }
+    .main-1{
+    max-width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    .mainPost img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures image covers entire area without distortion */
+        object-position: center; /* Keeps it centered */
+        display: block;
+    }
+    .mainOne{
+        width: auto;
+        
+    }
+    .mainTwo{
+        width: 90%;
+    }
+    .bottom-Div-post{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .bottom-Div-post span{
+        display: none;
+    }
+    .bottom-Div-Child{
+        width: 340px;
+        height: 200px;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        background-color: blueviolet;
+        background-image: url("./Pic/Rocket_pic.jpg");
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        padding: 16px;
+        color: var(--text-color);
+        position: relative;
+    }
+    .bottom-Div-post_subdiv{
+        width: 340px;
+        height: auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        margin-bottom:40px;
+    }
+    .bottom-Div-post-subdiv-pic{
+        width: 100%;
+        height: 200px;
+        background-image: url("./Pic/Rocket_pic.jpg");
+        background-size: cover;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .bottom-Div-post-subdiv-text{
+        font-size: 16px;
+        padding: 4px 8px 8px 12px;
+        max-width: 100%;
+    }
+    .right-Div{
+        margin: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        border-radius: 6px;
+        width: 100%;
+    }
+    
+    .right-Div-child{
+        background-color: rgb(215, 215, 215);
+        background-image:url("./Pic/GPU_Photo.jpg") ;
+        background-size: cover;
+        background-position: center;
+        width: 340px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        margin: 0 10px 10px 10px;
+        color: var(--text-color);
+        cursor: pointer;
+        border-radius: 8px;
+    }
+    .topDiv{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+        color:var(--text-color);
+        padding: 20px;
+    }
+    .nav-Part1{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 20px;
+        display: none;
+    }
+    .nav-Part2{
+        display: none;
+    }
+    .nav-Part3{
+        display: block;
+    }
+}

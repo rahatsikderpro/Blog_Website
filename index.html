@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_mobile.css">
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="details_post.css">
+    <link rel="stylesheet" href="login_style.css">
+    <link rel="stylesheet" href="register.css">
+
+</head>
+<body>
+    <header >
+        <div class="header-Container">
+            <div class="topDiv">
+                <h2>LOGO</h2>
+                <div class="nav-Part1">
+                    <div>Home</div>
+                    <div>Explore/Catagories</div>
+                    <div>About</div>
+                </div>
+                <div class="nav-Part2">
+                    <div class="nav-Part2_first_Div">
+                        <input type="text" class="nav-Part2_First_Input" placeholder=" Search here">
+                        <span class="material-symbols-outlined " >search</span>
+                    </div>
+                    <div id="light_Dark">
+                        <span class="material-symbols-outlined night_Mode_Icon" >mode_night</span>
+                        <span class="material-symbols-outlined light_mode_Icon" >light_mode</span>
+                    </div>
+                    <div class="Sign-in-btn" onclick="showLogin()">Sign-in</div>
+                    <span class="material-symbols-outlined account_icon display-None" >account_circle</span>
+                    
+                </div>
+                <div class="nav-Part3" onclick="showLogin()">
+                    <span class="material-symbols-outlined">menu</span>
+                </div>
+                <div class="account-Detailes display-None">
+                    <div class="account-Detailes-Name">
+                        <span class="material-symbols-outlined account_icon-Small" >account_circle</span>
+                        <div class="account-Name-Text"></div>
+                    </div>
+                    <div class="account-Detailes-Setting">Setting</div>
+                    <div class="account-Detailes-LogOut">Log Out</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-1">
+            <div class="mainOne">
+                <div class="filter-Div">
+                    <div class="filter-Text">Trending</div>
+                    <div class="filter-Text">Science</div>
+                    <div class="filter-Text">Travel</div>
+                    <div class="filter-Text">Technology 1</div>
+                    <div class="filter-Text">Technology 2</div>
+                    <div class="filter-Text">Technology 3</div>
+                    <div class="filter-Text">Technology 4</div>
+                    <div class="filter-Text">Technology last</div>             
+                </div>
+                <div class="mainPost">
+                    <img src="./Pic/Children.jpg" class="img-1" alt="Rocket Pic">
+                    <div class="featuredText">
+                        <h2>Just Smile</h2>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dicta delectus vero, nemo magni consequatur quisquam blanditiis eveniet voluptas a repudiandae? Perferendis inventore tenetur ipsam, porro quae sit culpa velit?</div>
+                        <div class="readMoreBtn">Read more...</div>
+                    </div>                
+                </div>
+                <!-- <div class="bottom-Div">
+                    <h3>Trending this Week</h3>
+                    <div class="bottom-Div-post">
+                        <div class="bottom-Div-Child">Lorem ipsum dolor sit amet consectetur</div>
+                        <div class="bottom-Div-Child">Lorem ipsum dolor sit amet consectetur</div>
+                        <div class="bottom-Div-Child">Lorem ipsum dolor sit amet consectetur</div>
+                        <div class="bottom-Div-Child">Lorem ipsum dolor sit amet consectetur</div>
+                        <div class="bottom-Div-Child">Lorem ipsum dolor sit amet consectetur</div>
+                    </div>
+                </div> -->
+
+                <div class="bottom-Div-2nd">
+                    <h3>Trending this Week</h3>
+                    <div class="bottom-Div-post swip-Container">
+                        <span class="material-symbols-outlined">arrow_back_ios</span>
+                        <div class="bottom-Div-post_subdiv swip-child">
+                            <div class="bottom-Div-post-subdiv-pic"> </div>
+                            <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="date-amd-more">
+                                <div class="post-Date"> 22 April 2025</div>
+                                <div class="readmore-Common">Read More...</div>
+                            </div>
+                        </div>
+                        <div class="bottom-Div-post_subdiv swip-child">
+                            <div class="bottom-Div-post-subdiv-pic"> </div>
+                            <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="date-amd-more">
+                                <div class="post-Date"> 22 April 2025</div>
+                                <div class="readmore-Common">Read More...</div>
+                            </div>
+                        </div>
+                        <div class="bottom-Div-post_subdiv swip-child">
+                            <div class="bottom-Div-post-subdiv-pic"> </div>
+                            <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="date-amd-more">
+                                <div class="post-Date"> 22 April 2025</div>
+                                <div class="readmore-Common">Read More...</div>
+                            </div>
+                        </div>
+                        <div class="bottom-Div-post_subdiv swip-child">
+                            <div class="bottom-Div-post-subdiv-pic"> </div>
+                            <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="date-amd-more">
+                                <div class="post-Date"> 22 April 2025</div>
+                                <div class="readmore-Common">Read More...</div>
+                            </div>
+                        </div>
+                        <div class="bottom-Div-post_subdiv swip-child">
+                            <div class="bottom-Div-post-subdiv-pic"> </div>
+                            <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="date-amd-more">
+                                <div class="post-Date"> 22 April 2025</div>
+                                <div class="readmore-Common">Read More...</div>
+                            </div>
+                        </div>
+                        <div class="bottom-Div-post_subdiv swip-child">
+                            <div class="bottom-Div-post-subdiv-pic"> </div>
+                            <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="date-amd-more">
+                                <div class="post-Date"> 22 April 2025</div>
+                                <div class="readmore-Common">Read More...</div>
+                            </div>
+                        </div>
+                        <div class="bottom-Div-post_subdiv swip-child">
+                            <div class="bottom-Div-post-subdiv-pic"> </div>
+                            <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="date-amd-more">
+                                <div class="post-Date"> 22 April 2025</div>
+                                <div class="readmore-Common">Read More...</div>
+                            </div>
+                        </div>
+                       
+                        <span class="material-symbols-outlined">arrow_forward_ios</span>
+                    </div>
+                </div>
+
+
+
+                <div class="bottom-Div-2nd ">
+                    <h3>Latest Post</h3>
+                    <div class="bottom-Div-post swip-Container">
+                        <span class="material-symbols-outlined">arrow_back_ios</span>
+                        <div class="bottom-Div-post_subdiv swip-child">
+                            <div class="bottom-Div-post-subdiv-pic"> </div>
+                            <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="date-amd-more">
+                                <div class="post-Date"> 22 April 2025</div>
+                                <div class="readmore-Common">Read More...</div>
+                            </div>
+                        </div>
+                        <div class="bottom-Div-post_subdiv swip-child">
+                            <div class="bottom-Div-post-subdiv-pic"> </div>
+                            <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="date-amd-more">
+                                <div class="post-Date"> 22 April 2025</div>
+                                <div class="readmore-Common">Read More...</div>
+                            </div>
+                        </div>
+                        <div class="bottom-Div-post_subdiv swip-child">
+                            <div class="bottom-Div-post-subdiv-pic"> </div>
+                            <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="date-amd-more">
+                                <div class="post-Date"> 22 April 2025</div>
+                                <div class="readmore-Common">Read More...</div>
+                            </div>
+                        </div>                        
+                        <div class="bottom-Div-post_subdiv swip-child">
+                            <div class="bottom-Div-post-subdiv-pic"> </div>
+                            <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="date-amd-more">
+                                <div class="post-Date"> 22 April 2025</div>
+                                <div class="readmore-Common">Read More...</div>
+                            </div>
+                        </div>                        
+                        <div class="bottom-Div-post_subdiv swip-child">
+                            <div class="bottom-Div-post-subdiv-pic"> </div>
+                            <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="date-amd-more">
+                                <div class="post-Date"> 22 April 2025</div>
+                                <div class="readmore-Common">Read More...</div>
+                            </div>
+                        </div>                        
+                        <div class="bottom-Div-post_subdiv swip-child">
+                            <div class="bottom-Div-post-subdiv-pic"> </div>
+                            <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="date-amd-more">
+                                <div class="post-Date"> 22 April 2025</div>
+                                <div class="readmore-Common">Read More...</div>
+                            </div>
+                        </div>                        
+                        <div class="bottom-Div-post_subdiv swip-child">
+                            <div class="bottom-Div-post-subdiv-pic"> </div>
+                            <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="date-amd-more">
+                                <div class="post-Date"> 22 April 2025</div>
+                                <div class="readmore-Common">Read More...</div>
+                            </div>
+                        </div>                        
+                        <span class="material-symbols-outlined">arrow_forward_ios</span>
+                    </div>
+                </div>
+                
+
+  
+
+            </div>
+            <div class="right-Div">
+                <h3>Top post</h3>
+                <div class="bottom-Div-post_subdiv">
+                    <div class="bottom-Div-post-subdiv-pic"> </div>
+                    <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="date-amd-more">
+                        <div class="post-Date"> 22 April 2025</div>
+                        <div class="readmore-Common">Read More...</div>
+                    </div>
+                </div>
+                <div class="bottom-Div-post_subdiv">
+                    <div class="bottom-Div-post-subdiv-pic"> </div>
+                    <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="date-amd-more">
+                        <div class="post-Date"> 22 April 2025</div>
+                        <div class="readmore-Common">Read More...</div>
+                    </div>
+                </div>
+                <div class="bottom-Div-post_subdiv">
+                    <div class="bottom-Div-post-subdiv-pic"> </div>
+                    <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="date-amd-more">
+                        <div class="post-Date"> 22 April 2025</div>
+                        <div class="readmore-Common">Read More...</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="login-main" class="login-Container-None">
+            <form id="loginForm">
+                <h3>Enter Login Information</h3>
+                <div class="login-Container login-Container-None">
+                    <input type="text" id="username" placeholder="username" required>
+                    <input type="text" id="password" placeholder="password" required>
+                    <button type="submit" class="login-Btn">Login</button>
+                    <!-- <div class="login-Btn" type="submit">Login</div> -->
+                    
+                </div>
+            </form>
+            <div class="register-Div"> Don't have a acount <button type="submit" id="register-Btn"> Register</button> </div>
+        </div>
+        
+        <div>
+            <form id="register-Form">
+                <h3>Register</h3>
+                <input type="text" id="register-username" required>
+                <input type="text" id="register-password" required>
+                <button type="submit" id="register-Submit"> Submit</button>
+            </form>
+        </div>
+
+    </main>
+    <footer class="footerDiv">
+        <div>Acout Section</div>
+        <div>Quick Links</div>
+        <div>Social Media Links</div>
+        <div>Copyright Notice</div>
+    </footer>
+   
+
+    <script src="script.js"></script>
+    <script src="read_more.js"></script>
+    <script src="swiper.js"></script>
+
+
+
+
+</body>
+
+</html>

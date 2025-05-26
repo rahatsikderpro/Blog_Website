@@ -1,0 +1,21 @@
+.main-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width:1200px;
+    margin-top: 80px;
+    margin-inline: auto;
+
+}
+.main-2 img{
+    max-width: 1200px;
+    height: auto;
+}
+.main-2 h2{
+    text-decoration: underline;
+    padding-bottom: 12px;
+}
+.detailes_paragraph div{
+    padding: 0 20px 40px 20px;
+    font-size: 26px;
+}

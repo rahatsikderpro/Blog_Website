@@ -1,0 +1,384 @@
+/* style.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* :root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --header-bg: #f0f0f0;
+    --card-bg: #ffffff;
+    --footer-bg: #333333;
+    --footer-text: #ffffff;
+} */
+html, body {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    /* overflow: hidden; */
+}
+.displayNone{
+    display: none;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color:var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.header-Container{
+    max-width:1200px;
+    width: 100%;
+    margin: auto;
+}
+.topDiv{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    color:var(--text-color);
+   
+}
+.account_icon{
+    font-size: 36px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+main{
+    width: 100%;
+    /* height: calc(100% - 300px); */
+    min-height: calc(100% - 200px); /*100px added through padding top */
+    /* max-height: auto; */
+    background-color: var(--main-div-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 100px;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: var(--footer-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: var(--text-color);
+    padding: 0 20px;
+}
+
+.nav-Part1{
+    display: flex;
+    gap: 20px;
+    font-size:20px;
+}
+.nav-Part2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.light_mode_Icon{
+    display: none;
+    color: var(--text-color);
+    background-color: var(--hero-section-bg-color);
+}
+.night_Mode_Icon{
+    color: var(--text-color);
+    background-color: red;
+}
+.nav-Part3{
+    display: none;
+}
+.nav-Part2_first_Div{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.nav-Part2_First_Input{
+    border: none;
+    height: 36px;
+    min-width: 200px;
+    outline: none;
+    border-radius: 15px;
+    padding-inline: 24px;
+    font-size: 18px;
+    background-color: F2E4D8;
+}
+.night_Mode_Icon, .light_mode_Icon{ 
+    background-color: var(--main-div-bg-color);
+    color: var(--text-color-1);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 1000;
+}
+.Sign-in-btn{ 
+    background-color: var(--main-div-bg-color);
+    color: var(--text-color-1);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 6px;
+}
+.display-None{
+    display: none;
+}
+.display-Flex{
+    display: flex;
+}
+.account-Detailes{
+    position: fixed;
+    color: black;
+    background-color: var(--bg-color-transparent);
+    /* filter: blur(20px); */
+    backdrop-filter: blur(5px);
+    min-width: 200px;
+    min-height: 100px;
+    top: 100px;
+    right: 0;
+    /* display: flex; */
+    flex-direction: column;
+    padding: 16px 10px;
+    gap: 8px;
+    color: var(--text-color-1);
+}
+.account-Detailes-Name{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-color-1);
+}
+.account_icon-Small{
+    display: flex;
+    gap: 4px;
+}
+.mainPost{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: var(--hero-section-bg-color);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+.main-1{
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.mainOne{
+    width: 70%;
+}
+
+.mainTwo{
+    width: 30%;
+}
+.filter-Div{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start; */
+    align-items: center;
+    gap: 20px;
+    margin: 24px;
+    overflow: auto;
+    padding-inline: 24px;
+}
+.filter-Div::-webkit-scrollbar {
+    display: none;
+}
+.filter-Text{
+    background-color: var(--filter-div-bg-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 6px 16px;
+    min-height: 10px;
+    display: flex;
+    white-space: nowrap;
+}
+.mainPost img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers entire area without distortion */
+    object-position: center; /* Keeps it centered */
+    display: block;
+}
+
+    
+.featuredText{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    padding: 20px;
+    gap: 10px;
+    z-index: 2;
+    max-height: 500px;
+    transition: all 1s ease;
+}
+.img-1:hover + .featuredText {
+    max-height: 0;
+    display: none;
+}
+
+.featuredText div {
+    overflow: hidden;
+}
+.readMoreBtn{
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+.readMoreBtn:hover{
+    color: var(--hover-text-color);
+}
+
+.right-Div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    
+}
+.right-Div h3{
+    text-decoration: underline;
+    padding: 50px 0 12px 0 ;
+}
+.right-Div-child{
+    background-color: rgb(215, 215, 215);
+    background-image:url("./Pic/GPU_Photo.jpg") ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin:10px 0;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 8px;
+}
+.right-Div-child div {
+    background-color: rgba(0, 0, 0, 0.489);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.bottom-Div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 200px;
+    align-items: start;
+    margin: 30px 0;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #01261F;
+}
+.bottom-Div h3{
+    text-decoration: underline;
+    padding-left: 8px;
+}
+.bottom-Div-post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 160px;
+    width: 100%;
+    align-items: center;
+}
+.bottom-Div-Child{
+    width: 80%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: blueviolet;
+    background-image: url("./Pic/Rocket_pic.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    color: var(--text-color);
+    padding: 0 12px;
+}
+.bottom-Div-post_subdiv{
+    width: 200px;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    margin-bottom:40px;
+}
+.bottom-Div-post-subdiv-pic{
+    width: 100%;
+    height: 180px;
+    background-image: url("./Pic/Rocket_pic.jpg");
+    background-size: cover;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.bottom-Div-post-subdiv-text{
+    font-size: 16px;
+    max-width: 100%;
+    padding: 4px 8px 8px 12px;
+    font-stretch: extra-expanded;
+    font-size: 16px;
+    color: var(--text-color-1);
+}
+.post-Date{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #8c8c8c;
+}
+.date-amd-more{
+    padding-inline: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.readmore-Common{
+    font-size: 14px;
+    color: var(--text-color-1);
+}
+.readmore-Common:hover{
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(5, 207, 5);
+}
+h3{
+    color: var(--text-color-1);
+}
+.bottom-Div-2nd{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+.bottom-Div-2nd h3{
+    padding-left: 8px;
+    text-decoration: underline;
+}
