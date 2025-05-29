@@ -97,7 +97,12 @@ account_icon.addEventListener('click', ()=>{
 account_detailes.addEventListener('click', (e)=>{
   account_detailes.classList.toggle('display-Flex')
 });
-
+document.querySelector('.account-Detailes-LogOut').addEventListener('click', (e)=>{
+  // Remove the Logged user
+  localStorage.removeItem("Logged-user-name");
+  console.log("Logged-user-name removed 2");
+  location.reload();
+});
 
 //register div show
 const loginBtn = document.getElementById('login-main');
