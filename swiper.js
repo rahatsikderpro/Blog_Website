@@ -14,7 +14,7 @@ sliders.forEach((slider) => {
     slider.addEventListener("mousemove", (e) => {
       if (!isMove) return;
       let moveX = e.pageX - startX;
-      slider.scrollLeft = (scroll_L - moveX) * 1.5;
+      slider.scrollLeft = (scroll_L - moveX);
     });
   
     slider.addEventListener("mouseleave", () => {
@@ -26,8 +26,4 @@ sliders.forEach((slider) => {
     });
 });
 
-// document.addEventListener("click", () => {
-//   console.log("Hello Click");
-//   console.log("scroll_L= ", scroll_L);
-// //   slider.scrollLeft = 200;
-// });
+

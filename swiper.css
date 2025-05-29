@@ -10,10 +10,11 @@
 .swip-Container::-webkit-scrollbar {
   display: none; 
 }
-.swip-Container {
+/* .swip-Container {
   scroll-behavior: smooth;
-}
+} */
 .swip-child{
   flex: 0 0 auto;
     
 }
+

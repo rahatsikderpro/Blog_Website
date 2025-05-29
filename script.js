@@ -55,7 +55,8 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
         matchedUser = users_from_Ls[i];
         console.log('matchedUser', matchedUser.username)
         localStorage.setItem('Logged-user-name' , JSON.stringify(matchedUser.username));
-        
+        let account_Name_Text_1 = JSON.parse(localStorage.getItem("Logged-user-name"));
+        document.querySelector('.account-Name-Text').innerHTML = account_Name_Text_1;
         // document.querySelector('.account-Name-Text').innerHTML = account_Name_Text;
         break;
       };

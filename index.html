@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Site</title>
-    
+   
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_mobile.css">
@@ -35,20 +35,24 @@
                         <span class="material-symbols-outlined light_mode_Icon" >light_mode</span>
                     </div>
                     <div class="Sign-in-btn" onclick="showLogin()">Sign-in</div>
-                    <span class="material-symbols-outlined account_icon display-None" >account_circle</span>
+                    <div>
+                        <span class="material-symbols-outlined account_icon display-None" >account_circle</span>
+                        <div class="account-Detailes display-None">
+                            <div class="account-Detailes-Name">
+                                <span class="material-symbols-outlined account_icon-Small" >account_circle</span>
+                                <div class="account-Name-Text"></div>
+                            </div>
+                            <div class="account-Detailes-Setting">Setting</div>
+                            <div class="account-Detailes-LogOut">Log Out</div>
+                        </div>
+                    </div>
+                    
                     
                 </div>
                 <div class="nav-Part3" onclick="showLogin()">
                     <span class="material-symbols-outlined">menu</span>
                 </div>
-                <div class="account-Detailes display-None">
-                    <div class="account-Detailes-Name">
-                        <span class="material-symbols-outlined account_icon-Small" >account_circle</span>
-                        <div class="account-Name-Text"></div>
-                    </div>
-                    <div class="account-Detailes-Setting">Setting</div>
-                    <div class="account-Detailes-LogOut">Log Out</div>
-                </div>
+                
             </div>
         </div>
     </header>
@@ -86,8 +90,9 @@
 
                 <div class="bottom-Div-2nd">
                     <h3>Trending this Week</h3>
+                    <span class="material-symbols-outlined">arrow_back_ios</span>
                     <div class="bottom-Div-post swip-Container">
-                        <span class="material-symbols-outlined">arrow_back_ios</span>
+                        
                         <div class="bottom-Div-post_subdiv swip-child">
                             <div class="bottom-Div-post-subdiv-pic"> </div>
                             <div class="bottom-Div-post-subdiv-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -214,8 +219,7 @@
                         <span class="material-symbols-outlined">arrow_forward_ios</span>
                     </div>
                 </div>
-                
-
+               
   
 
             </div>
@@ -279,7 +283,7 @@
         <div>Copyright Notice</div>
     </footer>
    
-
+    
     <script src="script.js"></script>
     <script src="read_more.js"></script>
     <script src="swiper.js"></script>
